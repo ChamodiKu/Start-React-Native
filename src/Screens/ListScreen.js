@@ -1,21 +1,21 @@
 import React from 'react';
 import {View, Text, StyleSheet} from 'react-native'
 
-const HomeScreen = () => {
+const ListScreen = () => {
     return(
         <View>
-            <Text style = {styles.text}>
-                Hi there
+            <Text>
+
             </Text>
         </View>
     );
 };
 
 const styles = StyleSheet.create ({
-    text:{
-        fontSize: 30
+    ListStyle:{
+        fontSize: 20
     }
 
 });
 
-export default HomeScreen;
+export default ListScreen;

@@ -12,7 +12,7 @@ const Example = () => {
 };
 
 const styles = StyleSheet.create ({
-    ExanmpleStyle:{
+    ExampleStyle:{
         fontSize: 20
     }
 
