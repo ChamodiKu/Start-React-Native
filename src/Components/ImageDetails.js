@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, Text, StyleSheet} from 'react-native'
 
-const Example = () => {
+const ImageDetails = () => {
     return(
         <View>
             <Text>
@@ -12,10 +12,10 @@ const Example = () => {
 };
 
 const styles = StyleSheet.create ({
-    ExampleStyle:{
+    ImageDetailsStyle:{
         fontSize: 20
     }
 
 });
 
-export default Example;
+export default ImageDetails;
