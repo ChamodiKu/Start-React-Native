@@ -7,20 +7,36 @@ import {
     TouchableOpacity      
 } from 'react-native'
 
-const HomeScreen = () => {
+const HomeScreen = ({ navigation }) => {//only access navigation from props, because we use only navigation in our code
+//(props) => { //access all in props
+    //console.log(props.navigation);
+
     return(
         <View>
             <Text style = {styles.text}>
                 Hi there!
             </Text>
             <Button
-                onPress = {() => console.log('Button pressed')}  // detect a press event we assign in on press prop add function to it for anytime a user as you might guess presses that button and using console log whenever we press on that button we should see a console log
+                //onPress = {() => console.log('Button pressed')}  // detect a press event we assign in on press prop add function to it for anytime a user as you might guess presses that button and using console log whenever we press on that button we should see a console log
+                //onPress={() => props.navigation.navigate('Components')}
+                onPress={() => navigation.navigate('Components')}
                 title = "Go to Components Demo"    //the text we want to show inside of button
             />
             
-            <TouchableOpacity onPress = {() => console.log('Button pressed')} > 
+            <Button 
+                onPress = {() => navigation.navigate('Image')}
+                title = "Go to Images Demo"
+            />
+
+            <Button
+                title = "Go to List Demo"
+                //onPress={() => props.navigation.navigate('List')}
+                onPress={() => navigation.navigate('List')}
+                />
+            <TouchableOpacity onPress={() => navigation.navigate('List')} > 
                 <Text>Go to List Demo</Text>
             </TouchableOpacity>
+            
         </View>
         //User taps on any of the elements inside of "<TouchableOpacity></TouchableOpacity>" the Touchable Opacity will detect that tab and give us some kind of notification in the form of a on press event just like the one we assigned to button like onPress
         //Highly customizable component that can detect a press on just about any kind of element
@@ -30,7 +46,7 @@ const HomeScreen = () => {
 
 const styles = StyleSheet.create ({
     text:{
-        fontSize: 30
+        fontSize: 45
     }
 
 });

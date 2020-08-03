@@ -1,14 +1,22 @@
 import React from 'react';
-import {View, Text, StyleSheet} from 'react-native'
+import {View, Text, StyleSheet, Image} from 'react-native'
 
-const ImageDetails = () => {
+//const ImageDetails = (props) => {
+const ImageDetails = ({ imageSource, title, imageScore}) => {
+    console.log (props);
     return(
         <View>
+            <Image source = {imageSource} />
+            <Text style = {styles.ImageDetailsStyle}>
+                {title}
+            </Text>
             <Text>
-
+                Image Score - {imageScore}
             </Text>
         </View>
     );
+    //<Image source = {require('../../assets/beach.jpg')}/>
+    //Image tag ue to add a image, source mean where the image stores in
 };
 
 const styles = StyleSheet.create ({
