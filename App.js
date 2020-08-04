@@ -7,15 +7,17 @@ import HomeScreen from './src/Screens/HomeScreen';      // . use for go inner fo
 import ComponentScreen from './src/Screens/ComponentScreen';
 import ListScreen from './src/Screens/ListScreen';
 import ImageScreen from './src/Screens/ImageScreen';
+import CounterScreen from './src/Screens/CounterScreen';
 
 //little object that decide what content show in the screen at any given poin of time
 //allow us to navigate or essentially change the content that is visible on the screen to users
 const navigator = createStackNavigator (
   {
-    Home : HomeScreen,
-    Components : ComponentScreen,
+    Home: HomeScreen,
+    Components: ComponentScreen,
     List: ListScreen,
-    Image: ImageScreen
+    Image: ImageScreen,
+    Counter: CounterScreen
   },
 
   {
