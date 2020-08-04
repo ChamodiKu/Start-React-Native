@@ -34,6 +34,11 @@ const HomeScreen = ({ navigation }) => {//only access navigation from props, bec
                 onPress={() => navigation.navigate('Counter')}
             />
 
+            <Button 
+                onPress = {() => navigation.navigate('Color')}
+                title = "Go to Color Demo"
+            />
+
             <Button
                 title = "Go to List Demo"
                 //onPress={() => props.navigation.navigate('List')}
