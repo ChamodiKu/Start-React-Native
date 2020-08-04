@@ -3,7 +3,8 @@ import {View, Text, StyleSheet, Image} from 'react-native'
 
 //const ImageDetails = (props) => {
 const ImageDetails = ({ imageSource, title, imageScore}) => {
-    console.log (props);
+    //console.log (props);
+    //props use for system to pass data from a parent to a child
     return(
         <View>
             <Image source = {imageSource} />

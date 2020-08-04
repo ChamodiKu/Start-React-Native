@@ -27,12 +27,19 @@ const HomeScreen = ({ navigation }) => {//only access navigation from props, bec
                 onPress = {() => navigation.navigate('Image')}
                 title = "Go to Images Demo"
             />
+            
+            <Button
+                title = "Go to Counter Demo"
+                //onPress={() => props.navigation.navigate('List')}
+                onPress={() => navigation.navigate('Counter')}
+            />
 
             <Button
                 title = "Go to List Demo"
                 //onPress={() => props.navigation.navigate('List')}
                 onPress={() => navigation.navigate('List')}
-                />
+            />
+
             <TouchableOpacity onPress={() => navigation.navigate('List')} > 
                 <Text>Go to List Demo</Text>
             </TouchableOpacity>
