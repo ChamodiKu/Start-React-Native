@@ -14,7 +14,7 @@ const CounterScreen = () =>{
         <View>
             <Button
                 onPress = {() =>{
-                    //counter++;  //hard code, increment counter but not display as counter value 
+                    //counter++;  //hard code, increment counter but not display as counter value because React doesn't detect this change. for this we can only use setter function.
                     setCounter(counter + 1); //adding one to a number(counter value) doesn't change that variable but returns a new value
                     //Anytime we call these set counter function React is going to automatically rerun this entire function component(CounterScreen component)
                     console.log(counter);
