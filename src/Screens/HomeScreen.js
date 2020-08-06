@@ -40,6 +40,16 @@ const HomeScreen = ({ navigation }) => {//only access navigation from props, bec
             />
 
             <Button
+                onPress = {() => navigation.navigate('Square')}
+                title = "Go to Square Demo"
+            />
+
+            <Button
+                onPress = {() => navigation.navigate('SquareReducer')}
+                title = "Go to Square Reducer Demo"
+            />
+
+            <Button
                 title = "Go to List Demo"
                 //onPress={() => props.navigation.navigate('List')}
                 onPress={() => navigation.navigate('List')}

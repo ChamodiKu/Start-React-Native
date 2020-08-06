@@ -9,6 +9,8 @@ import ListScreen from './src/Screens/ListScreen';
 import ImageScreen from './src/Screens/ImageScreen';
 import CounterScreen from './src/Screens/CounterScreen';
 import ColorScreen from './src/Screens/ColorScreen';
+import SquareScreen from './src/Screens/SquareScreen';
+import SquareScreenReducer from './src/Screens/SquareScreenReducer';
 
 //little object that decide what content show in the screen at any given poin of time
 //allow us to navigate or essentially change the content that is visible on the screen to users
@@ -19,7 +21,9 @@ const navigator = createStackNavigator (
     List: ListScreen,
     Image: ImageScreen,
     Counter: CounterScreen,
-    Color: ColorScreen
+    Color: ColorScreen,
+    Square: SquareScreen,
+    SquareReducer: SquareScreenReducer
   },
 
   {
