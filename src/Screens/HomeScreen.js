@@ -34,6 +34,11 @@ const HomeScreen = ({ navigation }) => {//only access navigation from props, bec
                 onPress={() => navigation.navigate('Counter')}
             />
 
+            <Button
+                onPress = {() => navigation.navigate('CounterReducer')}
+                title = "Go to Counter Reducer Demo"
+            />
+
             <Button 
                 onPress = {() => navigation.navigate('Color')}
                 title = "Go to Color Demo"
@@ -53,6 +58,11 @@ const HomeScreen = ({ navigation }) => {//only access navigation from props, bec
                 title = "Go to List Demo"
                 //onPress={() => props.navigation.navigate('List')}
                 onPress={() => navigation.navigate('List')}
+            />
+
+            <Button
+                title = "Text Demo"
+                onPress={() => navigation.navigate('Text')}
             />
 
             <TouchableOpacity onPress={() => navigation.navigate('List')} > 

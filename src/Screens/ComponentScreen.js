@@ -24,9 +24,7 @@ const styles = StyleSheet.create ({
     },
     subHeaderStyle:{
         fontSize: 20
-    }
-
-
+    },
 });
 
 //export the component so we can use it elsewhere in our project
