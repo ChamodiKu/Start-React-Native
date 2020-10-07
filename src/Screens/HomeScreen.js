@@ -70,6 +70,11 @@ const HomeScreen = ({ navigation }) => {//only access navigation from props, bec
                 onPress={() => navigation.navigate('Box')}
             />
 
+            <Button
+                title = "Flex Box Demo"
+                onPress={() => navigation.navigate('Flexbox')}
+            />
+
             <TouchableOpacity onPress={() => navigation.navigate('List')} > 
                 <Text>Go to List Demo</Text>
             </TouchableOpacity>
